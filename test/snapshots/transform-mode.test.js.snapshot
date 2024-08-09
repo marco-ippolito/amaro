@@ -1,0 +1,15 @@
+exports[`should handle optional chaining and nullish coalescing 1`] = `
+"const user = {\\n    name: 'Sila',\\n    preferences: {\\n        theme: 'dark'\\n    }\\n};\\nconst theme = user?.preferences?.theme ?? 'light';\\n"
+`;
+
+exports[`should handle top-level await 1`] = `
+"const data = await fetchData();\\n"
+`;
+
+exports[`should transform ES6 modules 1`] = `
+"import { add } from './math.js';\\nconst result = add(5, 3);\\n"
+`;
+
+exports[`should transform async/await 1`] = `
+"async function fetchData() {\\n    const response = await fetch('https://api.example.com/data');\\n    const data = await response.json();\\n    return data;\\n}\\n"
+`;
