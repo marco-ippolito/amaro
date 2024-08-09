@@ -1,0 +1,11 @@
+exports[`should handle class fields 1`] = `
+"class Counter {\\n    count = 0;\\n    increment() {\\n        this.count++;\\n    }\\n}\\n"
+`;
+
+exports[`should handle nullish coalescing 1`] = `
+"const value = null ?? 'default';\\n"
+`;
+
+exports[`should handle private class fields 1`] = `
+"class Counter {\\n    #count = 0;\\n    increment() {\\n        this.#count++;\\n    }\\n    getCount() {\\n        return this.#count;\\n    }\\n}\\n"
+`;

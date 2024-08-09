@@ -1,0 +1,7 @@
+exports[`should handle class decorators 1`] = `
+"@sealed\\nclass BugReport {\\n    type = \\"report\\";\\n    title;\\n    constructor(t){\\n        this.title = t;\\n    }\\n}\\nfunction sealed(constructor) {\\n    Object.seal(constructor);\\n    Object.seal(constructor.prototype);\\n}\\n"
+`;
+
+exports[`should handle namespaces 1`] = `
+"var Validation;\\n(function(Validation) {\\n    const lettersRegexp = /^[A-Za-z]+$/;\\n    class LettersOnlyValidator {\\n        isAcceptable(s) {\\n            return lettersRegexp.test(s);\\n        }\\n    }\\n    Validation.LettersOnlyValidator = LettersOnlyValidator;\\n})(Validation || (Validation = {}));\\n"
+`;
